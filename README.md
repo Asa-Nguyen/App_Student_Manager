@@ -77,5 +77,6 @@ If you would like to contribute to this project, please fork the repository and 
 Author
 - Asa Nguyen
 - Yoru Nguyen (second account)
+<br>
 License
 This project is licensed under the MIT License.
