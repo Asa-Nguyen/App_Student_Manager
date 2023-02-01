@@ -30,12 +30,10 @@ You need to have the following software installed on your system:
 ```bash
 git clone https://github.com/Asa-Nguyen/App_Student_Manager.git
 ```
-
 2. Install the required libraries using pip:
 ```bash
 pip install tkinter pymysql pandas
 ```
-
 3. Start the XAMPP control panel and start the Apache and MySQL services
 
 4. Open a web browser and navigate to `http://localhost/phpmyadmin`
@@ -44,40 +42,40 @@ pip install tkinter pymysql pandas
 
 6. Create a table named `data` with the following columns:
 
-- `Id`: VARCHAR(255)
-- `Name`: VARCHAR(255)
-- `Major`: VARCHAR(255)
-- `Class`: VARCHAR(255)
-- `GPA`: VARCHAR(255)
-- `Birth`: VARCHAR(255)
-- `Gender`: VARCHAR(255)
-- `Hometown`: VARCHAR(255)
-- `Address`: VARCHAR(255)
+- Id: VARCHAR(255)
+
+- Name: VARCHAR(255)
+
+- Major: VARCHAR(255)
+
+- Class: VARCHAR(255)
+
+- GPA: VARCHAR(255)
+
+- Birth: VARCHAR(255)
+
+- Gender: VARCHAR(255)
+
+- Hometown: VARCHAR(255)
+
+- Address: VARCHAR(255)
 
 7. Update the database connection information in the `database.py` file
 
-8. The `App` folder contains the executable file of the app. The `source` folder contains the source code for the app written in Python. To run the app, navigate to the `source` folder and run the following command:
-```bash
-python main.py
-```
+8. The `App` folder contains the executable file of the app. To run the app, navigate to the `App` folder and double-click the `app.exe` file.
 
-## Built With
-
+Built With:
 - Python
 - Tkinter
 - PyMySQL
 - pandas
 - XAMPP
 
-## Contributing
-
+Contributing
 If you would like to contribute to this project, please fork the repository and submit a pull request.
 
-## Author
-
+Author
 - Asa Nguyen
-
-## License
-
-This project is licensed under the [MIT License](https://github.com/Asa-Nguyen/App_Student_Manager/blob/main/LICENSE).
-
+- Yoru Nguyen (second account)
+License
+This project is licensed under the MIT License.
