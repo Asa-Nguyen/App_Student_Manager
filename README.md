@@ -56,7 +56,7 @@ pip install tkinter pymysql pandas
 
 7. Update the database connection information in the `database.py` file
 
-8. The `App` folder contains the executable file of the app. The `source code` folder contains the source code for the app written in Python. To run the app, navigate to the `source code` folder and run the following command:
+8. The `App` folder contains the executable file of the app. The `source` folder contains the source code for the app written in Python. To run the app, navigate to the `source` folder and run the following command:
 ```bash
 python main.py
 ```
