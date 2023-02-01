@@ -74,6 +74,8 @@ Built With:
 Contributing
 If you would like to contribute to this project, please fork the repository and submit a pull request.
 
+![Student Manager App](https://f9-zpcloud.zdn.vn/5600726544688048765/3c43c98a0804d35a8a15.jpg)
+
 Author
 - Asa Nguyen
 - Yoru Nguyen (second account)
