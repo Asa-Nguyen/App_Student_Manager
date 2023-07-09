@@ -5,7 +5,7 @@ import pymysql
 win = tk.Tk()
 win.geometry("1920x1080+0+0")
 win.title("Student Manager")
-win.wm_iconbitmap('python.ico')
+#win.wm_iconbitmap('python.ico')
 
 tittle_label = tk.Label(win, text = "Student Manager",font=("JetBrains Mono",25),border = 12,relief = tk.GROOVE)
 tittle_label.pack(side = tk.TOP, fill = tk.X)
@@ -93,7 +93,7 @@ address_ent.grid(row = 8, column = 1, padx = 2, pady = 2)
 
 # - - - - - - Functions - - - - - -
 def fetch_data():
-    connect = pymysql.connect(host = "localhost", user="root",password = "",database="student_manager")
+    connect = pymysql.connect(host = "172.17.0.2", user="root",password = "28122003",database="student_manager")
     curr = connect.cursor()
     curr.execute("SELECT * FROM data")
     rows = curr.fetchall()
@@ -183,7 +183,7 @@ def search():
 
 # - - Button - - -
 btn_frame = tk.Frame(detail_frame,bd = 10)
-btn_frame.place(x = 30, y = 440, width = 400, height = 140)
+btn_frame.place(x = 30, y = 480, width = 400, height = 450)
 
 add_btn = tk.Button(btn_frame, bd = 7, text = "Add", font = ("JetBrains Mono",17), width = 10,relief = "flat",command=add_data)
 add_btn.grid(row = 0, column = 0, padx = 2, pady = 2)
