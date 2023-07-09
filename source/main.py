@@ -108,9 +108,9 @@ def add_data():
     if Id.get() == "" or Name.get() == "" or Major.get() == "" or Class.get() == "" or GPA.get() == "" or Birth =="" or Gender.get() == "" or Hometown.get() == "" or Address.get() == "":
         messagebox.showerror("Error!","Please fill all the fields!")
     else:
-        connect = pymysql.connect(host="localhost",user="root",password="",database="student_manager")
+        connect = pymysql.connect(host="172.17.0.2",user="root",password="28122003",database="student_manager")
         curr = connect.cursor()
-        curr.execute("INSERT INTO DATA VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s)",(Id.get(),Name.get(),Major.get(),Class.get(),GPA.get(),Birth.get(),Gender.get(),Hometown.get(),Address.get()))
+        curr.execute("INSERT INTO data VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s)",(Id.get(),Name.get(),Major.get(),Class.get(),GPA.get(),Birth.get(),Gender.get(),Hometown.get(),Address.get()))
         connect.commit()
         connect.close()
 def get_cursor(event):
@@ -140,7 +140,7 @@ def clear():
     Address.set("")
 
 def update_data():
-    connect = pymysql.connect(host="localhost", user="root",password="",database="student_manager")
+    connect = pymysql.connect(host="172.17.0.2", user="root",password="28122003",database="student_manager")
     curr = connect.cursor()
     curr.execute("update data set Name = %s, Major = %s, Class = %s, GPA = %s, Birth = %s, Gender = %s, Hometown = %s, Address = %s where Id = %s",(Name.get(),Major.get(),Class.get(),GPA.get(),Birth.get(),Gender.get(),Hometown.get(),Address.get(),Id.get()))
     connect.commit()
@@ -149,7 +149,7 @@ def update_data():
     clear()
 
 def delete():
-    connect = pymysql.connect(host="localhost", user="root",password="",database="student_manager")
+    connect = pymysql.connect(host="172.17.0.2", user="root",password="28122003",database="student_manager")
     cc = student_table.focus()
     content = student_table.item(cc)
     pp = content['values'][0]
@@ -161,7 +161,7 @@ def delete():
 
 
 def search():
-    connect = pymysql.connect(host = "localhost", user="root",password = "",database="student_manager")
+    connect = pymysql.connect(host = "172.17.0.2", user="root",password = "28122003",database="student_manager")
     curr = connect.cursor()
     sql = "SELECT * FROM  data WHERE {} LIKE %s".format(str(search_by.get()))
     curr.execute(sql,('%' + str(search_text.get()) + '%',))
